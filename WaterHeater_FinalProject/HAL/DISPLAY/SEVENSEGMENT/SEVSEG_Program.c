@@ -1,0 +1,80 @@
+/*
+ * SEVSEG_Program.c
+ *
+ * Created: 13/12/2024 4:58:04 PM
+ *  Author: zyade
+ */ 
+
+#include "SEVSEG_Interface.h"
+
+void SEVSENSEGMENT_Initialize(void)
+{
+	DIO_SetPinDirection(SEVESEG_DATA_PORT, SEVSEG_DATA_A, SEVSEG_OUTPUT);
+	DIO_SetPinDirection(SEVESEG_DATA_PORT, SEVSEG_DATA_B, SEVSEG_OUTPUT);
+	DIO_SetPinDirection(SEVESEG_DATA_PORT, SEVSEG_DATA_C, SEVSEG_OUTPUT);
+	DIO_SetPinDirection(SEVESEG_DATA_PORT, SEVSEG_DATA_D, SEVSEG_OUTPUT);
+	
+	DIO_SetPinDirection(SEVESEG_CONTROL_PORT, SEVSEG_CONTROL_EN1, SEVSEG_OUTPUT);
+	DIO_SetPinDirection(SEVESEG_CONTROL_PORT, SEVSEG_CONTROL_EN2, SEVSEG_OUTPUT);
+	DIO_SetPinDirection(SEVESEG_CONTROL_PORT, SEVSEG_CONTROL_DIP, SEVSEG_OUTPUT);
+}
+
+void SEVSENSEGMENT_EnableSegment1(void)
+{
+	DIO_SetPinValue(SEVESEG_CONTROL_PORT, SEVSEG_CONTROL_EN1, SEVSEG_HIGH);
+		 DIO_SetPinValue(DIO_PORTC,DIO_PIN5, SEVSEG_HIGH);
+
+}
+void SEVSENSEGMENT_DisableSegment1(void)
+{
+	DIO_SetPinValue(SEVESEG_CONTROL_PORT, SEVSEG_CONTROL_EN1, SEVSEG_LOW);
+	 DIO_SetPinValue(DIO_PORTC,DIO_PIN5, SEVSEG_LOW);
+
+}
+
+void SEVSENSEGMENT_EnableSegment2(void)
+{
+	DIO_SetPinValue(SEVESEG_CONTROL_PORT, SEVSEG_CONTROL_EN2, SEVSEG_HIGH);
+			 DIO_SetPinValue(DIO_PORTC,DIO_PIN5, SEVSEG_HIGH);
+
+}
+void SEVSENSEGMENT_DisableSegment2(void)
+{
+	DIO_SetPinValue(SEVESEG_CONTROL_PORT, SEVSEG_CONTROL_EN2, SEVSEG_LOW);
+		 DIO_SetPinValue(DIO_PORTC,DIO_PIN5, SEVSEG_LOW);
+
+}
+
+void SEVSENSEGMENT_EnableDecimalPoint(void)
+{
+	DIO_SetPinValue(SEVESEG_CONTROL_PORT, SEVSEG_CONTROL_DIP, SEVSEG_HIGH);
+}
+void SEVSENSEGMENT_DisableDecimalPoint(void)
+{
+	DIO_SetPinValue(SEVESEG_CONTROL_PORT, SEVSEG_CONTROL_DIP, SEVSEG_LOW);
+}
+
+void SEVSENSEGMENT_DisplayNumber(uint8_t number)
+{
+	uint8_t tens  =  number /10 ;
+	uint8_t units = number %10;
+
+
+	SEVSEG_PORT = tens << 4;
+	SEVSENSEGMENT_EnableSegment1();
+	_delay_ms(25);
+	SEVSENSEGMENT_DisableSegment1();
+	
+	SEVSEG_PORT = units << 4;
+	SEVSENSEGMENT_EnableSegment2();
+	_delay_ms(25);
+	SEVSENSEGMENT_DisableSegment2();
+}
+
+void SEVSENSEGMENT_OFF(void)
+{
+	 SEVSENSEGMENT_DisableSegment1();
+	 SEVSENSEGMENT_DisableSegment2();
+	// _delay_ms(50);
+
+}
