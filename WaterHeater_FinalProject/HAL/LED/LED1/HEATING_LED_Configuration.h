@@ -11,7 +11,7 @@
 
 #include "CPU_Configuration.h"
 
-#define HEATING_LED        DIO_PIN5
+#define HEATING_LED        DIO_PIN0
 
 #define HEATING_LED_PORT   DIO_PORTD
 

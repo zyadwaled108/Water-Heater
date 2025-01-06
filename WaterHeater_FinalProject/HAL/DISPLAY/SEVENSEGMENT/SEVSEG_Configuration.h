@@ -16,6 +16,8 @@
 #define SEVSEG_PORT           _DIO_PORTA
 #define SEVESEG_DATA_PORT     DIO_PORTA
 #define SEVESEG_CONTROL_PORT  DIO_PORTA
+#define SEVESEG_BI_PORT       DIO_PORTC
+
 // Renaming Pin
 #define SEVSEG_DATA_A         DIO_PIN4
 #define SEVSEG_DATA_B         DIO_PIN5
@@ -25,6 +27,8 @@
 #define SEVSEG_CONTROL_EN1   DIO_PIN1
 #define SEVSEG_CONTROL_EN2   DIO_PIN2
 #define SEVSEG_CONTROL_DIP   DIO_PIN3
+#define SEVSEG_CONTROL_BI    DIO_PIN5
+
 // Renaming State
 #define SEVSEG_OUTPUT         DIO_OUTPUT
 // Renaming Status

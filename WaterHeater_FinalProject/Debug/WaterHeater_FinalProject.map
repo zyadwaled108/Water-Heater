@@ -90,12 +90,34 @@ Discarded input sections
  .text.intToStr
                 0x00000000       0x7c HAL/DISPLAY/LCD/LCD_Program.o
  .text.ftoa     0x00000000       0xd6 HAL/DISPLAY/LCD/LCD_Program.o
+ .text.LCD_Write_Command
+                0x00000000       0x90 HAL/DISPLAY/LCD/LCD_Program.o
+ .text.LCD_Initialize
+                0x00000000       0x7e HAL/DISPLAY/LCD/LCD_Program.o
  .text.LCD_Clear_Screen
                 0x00000000        0x8 HAL/DISPLAY/LCD/LCD_Program.o
+ .text.LCD_Write_Character
+                0x00000000       0x90 HAL/DISPLAY/LCD/LCD_Program.o
+ .text.LCD_Write_String
+                0x00000000       0x2a HAL/DISPLAY/LCD/LCD_Program.o
+ .text.LCD_Write_IntegerNumber
+                0x00000000       0x3a HAL/DISPLAY/LCD/LCD_Program.o
  .text.LCD_Write_FloatNumber
                 0x00000000       0x3c HAL/DISPLAY/LCD/LCD_Program.o
+ .text.LCD_Write_Location
+                0x00000000       0x30 HAL/DISPLAY/LCD/LCD_Program.o
  .text.LCD_Write_SpecialCharacter
                 0x00000000       0x32 HAL/DISPLAY/LCD/LCD_Program.o
+ .debug_info    0x00000000      0xcbc HAL/DISPLAY/LCD/LCD_Program.o
+ .debug_abbrev  0x00000000      0x29e HAL/DISPLAY/LCD/LCD_Program.o
+ .debug_loc     0x00000000      0x7d7 HAL/DISPLAY/LCD/LCD_Program.o
+ .debug_aranges
+                0x00000000       0x78 HAL/DISPLAY/LCD/LCD_Program.o
+ .debug_ranges  0x00000000       0x68 HAL/DISPLAY/LCD/LCD_Program.o
+ .debug_line    0x00000000      0x4e4 HAL/DISPLAY/LCD/LCD_Program.o
+ .debug_str     0x00000000      0x4c1 HAL/DISPLAY/LCD/LCD_Program.o
+ .comment       0x00000000       0x31 HAL/DISPLAY/LCD/LCD_Program.o
+ .debug_frame   0x00000000      0x18c HAL/DISPLAY/LCD/LCD_Program.o
  .text          0x00000000        0x0 HAL/DISPLAY/SEVENSEGMENT/SEVSEG_Program.o
  .data          0x00000000        0x0 HAL/DISPLAY/SEVENSEGMENT/SEVSEG_Program.o
  .bss           0x00000000        0x0 HAL/DISPLAY/SEVENSEGMENT/SEVSEG_Program.o
@@ -175,7 +197,7 @@ Discarded input sections
                 0x00000000       0x30 MCAL/TIMER/TIMER0/CTC/Timer0_CTC_Program.o
  .debug_ranges  0x00000000       0x20 MCAL/TIMER/TIMER0/CTC/Timer0_CTC_Program.o
  .debug_line    0x00000000      0x107 MCAL/TIMER/TIMER0/CTC/Timer0_CTC_Program.o
- .debug_str     0x00000000      0x219 MCAL/TIMER/TIMER0/CTC/Timer0_CTC_Program.o
+ .debug_str     0x00000000      0x222 MCAL/TIMER/TIMER0/CTC/Timer0_CTC_Program.o
  .comment       0x00000000       0x31 MCAL/TIMER/TIMER0/CTC/Timer0_CTC_Program.o
  .debug_frame   0x00000000       0x44 MCAL/TIMER/TIMER0/CTC/Timer0_CTC_Program.o
  .text          0x00000000        0x0 MCAL/TIMER/TIMER0/OVF/Timer0_OVF_Program.o
@@ -453,12 +475,18 @@ Discarded input sections
  .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(ltoa_ncheck.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(ltoa_ncheck.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(ltoa_ncheck.o)
+ .text.avr-libc
+                0x00000000       0x1e c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(ltoa_ncheck.o)
  .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(ultoa_ncheck.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(ultoa_ncheck.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(ultoa_ncheck.o)
+ .text.avr-libc
+                0x00000000       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(ultoa_ncheck.o)
  .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(strrev.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(strrev.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(strrev.o)
+ .text.avr-libc
+                0x00000000       0x20 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(strrev.o)
 
 Memory Configuration
 
@@ -599,7 +627,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x1098
+.text           0x00000000      0xd66
  *(.vectors)
  .vectors       0x00000000       0x54 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.1.130/gcc/dev/atmega32/avr5/crtatmega32.o
                 0x00000000                __vector_default
@@ -682,225 +710,197 @@ END GROUP
  .text.main     0x000000a2        0xa APP/MAIN/Main.o
                 0x000000a2                main
  .text.Handle_TemperatureSetting
-                0x000000ac       0x3a APP/WaterHeater/WaterHeater_Program.o
+                0x000000ac       0x3c APP/WaterHeater/WaterHeater_Program.o
                 0x000000ac                Handle_TemperatureSetting
  .text.Retrieve_Temperature_From_EEPROM
-                0x000000e6       0x1e APP/WaterHeater/WaterHeater_Program.o
-                0x000000e6                Retrieve_Temperature_From_EEPROM
+                0x000000e8       0x1e APP/WaterHeater/WaterHeater_Program.o
+                0x000000e8                Retrieve_Temperature_From_EEPROM
  .text.System_Initialize
-                0x00000104       0x5a APP/WaterHeater/WaterHeater_Program.o
-                0x00000104                System_Initialize
+                0x00000106       0x56 APP/WaterHeater/WaterHeater_Program.o
+                0x00000106                System_Initialize
  .text.Save_Temperature_To_EEPROM
-                0x0000015e        0xe APP/WaterHeater/WaterHeater_Program.o
-                0x0000015e                Save_Temperature_To_EEPROM
+                0x0000015c        0xe APP/WaterHeater/WaterHeater_Program.o
+                0x0000015c                Save_Temperature_To_EEPROM
  .text.__vector_1
-                0x0000016c       0xc8 APP/WaterHeater/WaterHeater_Program.o
-                0x0000016c                __vector_1
+                0x0000016a       0xae APP/WaterHeater/WaterHeater_Program.o
+                0x0000016a                __vector_1
  .text.__vector_2
-                0x00000234       0xc8 APP/WaterHeater/WaterHeater_Program.o
-                0x00000234                __vector_2
+                0x00000218       0xae APP/WaterHeater/WaterHeater_Program.o
+                0x00000218                __vector_2
  .text.System_Off
-                0x000002fc       0x1a APP/WaterHeater/WaterHeater_Program.o
-                0x000002fc                System_Off
+                0x000002c6       0x1a APP/WaterHeater/WaterHeater_Program.o
+                0x000002c6                System_Off
  .text.__vector_3
-                0x00000316       0x90 APP/WaterHeater/WaterHeater_Program.o
-                0x00000316                __vector_3
+                0x000002e0       0x60 APP/WaterHeater/WaterHeater_Program.o
+                0x000002e0                __vector_3
  .text.WaterHeater
-                0x000003a6       0x44 APP/WaterHeater/WaterHeater_Program.o
-                0x000003a6                WaterHeater
- .text.heating  0x000003ea       0x28 APP/WaterHeater/WaterHeater_Program.o
-                0x000003ea                heating
- .text.cooling  0x00000412       0x12 APP/WaterHeater/WaterHeater_Program.o
-                0x00000412                cooling
+                0x00000340       0x44 APP/WaterHeater/WaterHeater_Program.o
+                0x00000340                WaterHeater
+ .text.heating  0x00000384       0x28 APP/WaterHeater/WaterHeater_Program.o
+                0x00000384                heating
+ .text.cooling  0x000003ac       0x12 APP/WaterHeater/WaterHeater_Program.o
+                0x000003ac                cooling
  .text.ManageHeating
-                0x00000424       0xbc APP/WaterHeater/WaterHeater_Program.o
-                0x00000424                ManageHeating
+                0x000003be       0xa4 APP/WaterHeater/WaterHeater_Program.o
+                0x000003be                ManageHeating
  .text.__vector_11
-                0x000004e0       0xb6 APP/WaterHeater/WaterHeater_Program.o
-                0x000004e0                __vector_11
- .text.LCD_Write_Command
-                0x00000596       0x90 HAL/DISPLAY/LCD/LCD_Program.o
-                0x00000596                LCD_Write_Command
- .text.LCD_Initialize
-                0x00000626       0x7e HAL/DISPLAY/LCD/LCD_Program.o
-                0x00000626                LCD_Initialize
- .text.LCD_Write_Character
-                0x000006a4       0x90 HAL/DISPLAY/LCD/LCD_Program.o
-                0x000006a4                LCD_Write_Character
- .text.LCD_Write_String
-                0x00000734       0x2a HAL/DISPLAY/LCD/LCD_Program.o
-                0x00000734                LCD_Write_String
- .text.LCD_Write_IntegerNumber
-                0x0000075e       0x3a HAL/DISPLAY/LCD/LCD_Program.o
-                0x0000075e                LCD_Write_IntegerNumber
- .text.LCD_Write_Location
-                0x00000798       0x30 HAL/DISPLAY/LCD/LCD_Program.o
-                0x00000798                LCD_Write_Location
+                0x00000462       0xb6 APP/WaterHeater/WaterHeater_Program.o
+                0x00000462                __vector_11
  .text.SEVSENSEGMENT_Initialize
-                0x000007c8       0x48 HAL/DISPLAY/SEVENSEGMENT/SEVSEG_Program.o
-                0x000007c8                SEVSENSEGMENT_Initialize
+                0x00000518       0x48 HAL/DISPLAY/SEVENSEGMENT/SEVSEG_Program.o
+                0x00000518                SEVSENSEGMENT_Initialize
  .text.SEVSENSEGMENT_EnableSegment1
-                0x00000810       0x16 HAL/DISPLAY/SEVENSEGMENT/SEVSEG_Program.o
-                0x00000810                SEVSENSEGMENT_EnableSegment1
+                0x00000560       0x16 HAL/DISPLAY/SEVENSEGMENT/SEVSEG_Program.o
+                0x00000560                SEVSENSEGMENT_EnableSegment1
  .text.SEVSENSEGMENT_DisableSegment1
-                0x00000826       0x16 HAL/DISPLAY/SEVENSEGMENT/SEVSEG_Program.o
-                0x00000826                SEVSENSEGMENT_DisableSegment1
+                0x00000576       0x16 HAL/DISPLAY/SEVENSEGMENT/SEVSEG_Program.o
+                0x00000576                SEVSENSEGMENT_DisableSegment1
  .text.SEVSENSEGMENT_EnableSegment2
-                0x0000083c       0x16 HAL/DISPLAY/SEVENSEGMENT/SEVSEG_Program.o
-                0x0000083c                SEVSENSEGMENT_EnableSegment2
+                0x0000058c       0x16 HAL/DISPLAY/SEVENSEGMENT/SEVSEG_Program.o
+                0x0000058c                SEVSENSEGMENT_EnableSegment2
  .text.SEVSENSEGMENT_DisableSegment2
-                0x00000852       0x16 HAL/DISPLAY/SEVENSEGMENT/SEVSEG_Program.o
-                0x00000852                SEVSENSEGMENT_DisableSegment2
+                0x000005a2       0x16 HAL/DISPLAY/SEVENSEGMENT/SEVSEG_Program.o
+                0x000005a2                SEVSENSEGMENT_DisableSegment2
  .text.SEVSENSEGMENT_DisplayNumber
-                0x00000868       0x68 HAL/DISPLAY/SEVENSEGMENT/SEVSEG_Program.o
-                0x00000868                SEVSENSEGMENT_DisplayNumber
+                0x000005b8       0x68 HAL/DISPLAY/SEVENSEGMENT/SEVSEG_Program.o
+                0x000005b8                SEVSENSEGMENT_DisplayNumber
  .text.SEVSENSEGMENT_OFF
-                0x000008d0        0xa HAL/DISPLAY/SEVENSEGMENT/SEVSEG_Program.o
-                0x000008d0                SEVSENSEGMENT_OFF
+                0x00000620        0xa HAL/DISPLAY/SEVENSEGMENT/SEVSEG_Program.o
+                0x00000620                SEVSENSEGMENT_OFF
  .text.EEPROM_Initialize
-                0x000008da        0x8 HAL/EEPROM_24C16N/EEPROM_24C16N_Program.o
-                0x000008da                EEPROM_Initialize
+                0x0000062a        0x8 HAL/EEPROM_24C16N/EEPROM_24C16N_Program.o
+                0x0000062a                EEPROM_Initialize
  .text.EEPROM_Write_DataByte
-                0x000008e2       0x3e HAL/EEPROM_24C16N/EEPROM_24C16N_Program.o
-                0x000008e2                EEPROM_Write_DataByte
+                0x00000632       0x3e HAL/EEPROM_24C16N/EEPROM_24C16N_Program.o
+                0x00000632                EEPROM_Write_DataByte
  .text.EEPROM_Read_DataByte
-                0x00000920       0x5c HAL/EEPROM_24C16N/EEPROM_24C16N_Program.o
-                0x00000920                EEPROM_Read_DataByte
+                0x00000670       0x5c HAL/EEPROM_24C16N/EEPROM_24C16N_Program.o
+                0x00000670                EEPROM_Read_DataByte
  .text.ON_LED_Initialize
-                0x0000097c        0xc HAL/LED/LED0/ON_LED_Program.o
-                0x0000097c                ON_LED_Initialize
+                0x000006cc        0xc HAL/LED/LED0/ON_LED_Program.o
+                0x000006cc                ON_LED_Initialize
  .text.ON_LED_ON
-                0x00000988        0xc HAL/LED/LED0/ON_LED_Program.o
-                0x00000988                ON_LED_ON
+                0x000006d8        0xc HAL/LED/LED0/ON_LED_Program.o
+                0x000006d8                ON_LED_ON
  .text.ON_LED_OFF
-                0x00000994        0xc HAL/LED/LED0/ON_LED_Program.o
-                0x00000994                ON_LED_OFF
+                0x000006e4        0xc HAL/LED/LED0/ON_LED_Program.o
+                0x000006e4                ON_LED_OFF
  .text.HEATING_LED_Initialize
-                0x000009a0        0xc HAL/LED/LED1/HEATING_LED_Program.o
-                0x000009a0                HEATING_LED_Initialize
+                0x000006f0        0xc HAL/LED/LED1/HEATING_LED_Program.o
+                0x000006f0                HEATING_LED_Initialize
  .text.HEATING_LED_OFF
-                0x000009ac        0xc HAL/LED/LED1/HEATING_LED_Program.o
-                0x000009ac                HEATING_LED_OFF
+                0x000006fc        0xc HAL/LED/LED1/HEATING_LED_Program.o
+                0x000006fc                HEATING_LED_OFF
  .text.HEATING_LED_TGL
-                0x000009b8        0xa HAL/LED/LED1/HEATING_LED_Program.o
-                0x000009b8                HEATING_LED_TGL
+                0x00000708        0xa HAL/LED/LED1/HEATING_LED_Program.o
+                0x00000708                HEATING_LED_TGL
  .text.COOLING_LED_Initialize
-                0x000009c2        0xc HAL/LED/LED2/COOLING_LED_Program.o
-                0x000009c2                COOLING_LED_Initialize
+                0x00000712        0xc HAL/LED/LED2/COOLING_LED_Program.o
+                0x00000712                COOLING_LED_Initialize
  .text.COOLING_LED_ON
-                0x000009ce        0xc HAL/LED/LED2/COOLING_LED_Program.o
-                0x000009ce                COOLING_LED_ON
+                0x0000071e        0xc HAL/LED/LED2/COOLING_LED_Program.o
+                0x0000071e                COOLING_LED_ON
  .text.COOLING_LED_OFF
-                0x000009da        0xc HAL/LED/LED2/COOLING_LED_Program.o
-                0x000009da                COOLING_LED_OFF
+                0x0000072a        0xc HAL/LED/LED2/COOLING_LED_Program.o
+                0x0000072a                COOLING_LED_OFF
  .text.CoolerRelay_Initialize
-                0x000009e6        0xc HAL/RELAYs/COOLER/CoolerRelay_Program.o
-                0x000009e6                CoolerRelay_Initialize
+                0x00000736        0xc HAL/RELAYs/COOLER/CoolerRelay_Program.o
+                0x00000736                CoolerRelay_Initialize
  .text.CoolerRelay_On
-                0x000009f2        0xc HAL/RELAYs/COOLER/CoolerRelay_Program.o
-                0x000009f2                CoolerRelay_On
+                0x00000742        0xc HAL/RELAYs/COOLER/CoolerRelay_Program.o
+                0x00000742                CoolerRelay_On
  .text.CoolerRelay_Off
-                0x000009fe        0xc HAL/RELAYs/COOLER/CoolerRelay_Program.o
-                0x000009fe                CoolerRelay_Off
+                0x0000074e        0xc HAL/RELAYs/COOLER/CoolerRelay_Program.o
+                0x0000074e                CoolerRelay_Off
  .text.HeaterRelay_Initialize
-                0x00000a0a        0xc HAL/RELAYs/HEATER/HeaterRelay_Program.o
-                0x00000a0a                HeaterRelay_Initialize
+                0x0000075a        0xc HAL/RELAYs/HEATER/HeaterRelay_Program.o
+                0x0000075a                HeaterRelay_Initialize
  .text.HeaterRelay_On
-                0x00000a16        0xc HAL/RELAYs/HEATER/HeaterRelay_Program.o
-                0x00000a16                HeaterRelay_On
+                0x00000766        0xc HAL/RELAYs/HEATER/HeaterRelay_Program.o
+                0x00000766                HeaterRelay_On
  .text.HeaterRelay_Off
-                0x00000a22        0xc HAL/RELAYs/HEATER/HeaterRelay_Program.o
-                0x00000a22                HeaterRelay_Off
+                0x00000772        0xc HAL/RELAYs/HEATER/HeaterRelay_Program.o
+                0x00000772                HeaterRelay_Off
  .text.LM35_Initialize
-                0x00000a2e        0xa HAL/TEMP_SENSOR/LM35/LM35_Program.o
-                0x00000a2e                LM35_Initialize
+                0x0000077e        0xa HAL/TEMP_SENSOR/LM35/LM35_Program.o
+                0x0000077e                LM35_Initialize
  .text.LM35_ReadTemperature
-                0x00000a38       0x32 HAL/TEMP_SENSOR/LM35/LM35_Program.o
-                0x00000a38                LM35_ReadTemperature
+                0x00000788       0x32 HAL/TEMP_SENSOR/LM35/LM35_Program.o
+                0x00000788                LM35_ReadTemperature
  .text.ADC_Initialize_WithoutInterrupt
-                0x00000a6a       0x12 MCAL/ADC/ADC_Program.o
-                0x00000a6a                ADC_Initialize_WithoutInterrupt
+                0x000007ba       0x12 MCAL/ADC/ADC_Program.o
+                0x000007ba                ADC_Initialize_WithoutInterrupt
  .text.ADC_Read
-                0x00000a7c       0x52 MCAL/ADC/ADC_Program.o
-                0x00000a7c                ADC_Read
+                0x000007cc       0x52 MCAL/ADC/ADC_Program.o
+                0x000007cc                ADC_Read
  .text.TWI_voidPeripheralInitialize
-                0x00000ace       0x1a MCAL/COMMUNICATION/I2C/TWI_Program.o
-                0x00000ace                TWI_voidPeripheralInitialize
+                0x0000081e       0x1a MCAL/COMMUNICATION/I2C/TWI_Program.o
+                0x0000081e                TWI_voidPeripheralInitialize
  .text.TWI_voidMasterSendStartCondition
-                0x00000ae8       0x20 MCAL/COMMUNICATION/I2C/TWI_Program.o
-                0x00000ae8                TWI_voidMasterSendStartCondition
+                0x00000838       0x20 MCAL/COMMUNICATION/I2C/TWI_Program.o
+                0x00000838                TWI_voidMasterSendStartCondition
  .text.TWI_voidMasterSendStopCondition
-                0x00000b08        0x6 MCAL/COMMUNICATION/I2C/TWI_Program.o
-                0x00000b08                TWI_voidMasterSendStopCondition
+                0x00000858        0x6 MCAL/COMMUNICATION/I2C/TWI_Program.o
+                0x00000858                TWI_voidMasterSendStopCondition
  .text.TWI_voidMasterSendRepeatedStartCondition
-                0x00000b0e       0x14 MCAL/COMMUNICATION/I2C/TWI_Program.o
-                0x00000b0e                TWI_voidMasterSendRepeatedStartCondition
+                0x0000085e       0x14 MCAL/COMMUNICATION/I2C/TWI_Program.o
+                0x0000085e                TWI_voidMasterSendRepeatedStartCondition
  .text.TWI_voidMasterSendSlaveAddressWithWriteOperation
-                0x00000b22       0x24 MCAL/COMMUNICATION/I2C/TWI_Program.o
-                0x00000b22                TWI_voidMasterSendSlaveAddressWithWriteOperation
+                0x00000872       0x24 MCAL/COMMUNICATION/I2C/TWI_Program.o
+                0x00000872                TWI_voidMasterSendSlaveAddressWithWriteOperation
  .text.TWI_voidMasterSendSlaveAddressWithReadOperation
-                0x00000b46       0x20 MCAL/COMMUNICATION/I2C/TWI_Program.o
-                0x00000b46                TWI_voidMasterSendSlaveAddressWithReadOperation
+                0x00000896       0x20 MCAL/COMMUNICATION/I2C/TWI_Program.o
+                0x00000896                TWI_voidMasterSendSlaveAddressWithReadOperation
  .text.TWI_voidMasterTransmitDataByteWithACK
-                0x00000b66       0x18 MCAL/COMMUNICATION/I2C/TWI_Program.o
-                0x00000b66                TWI_voidMasterTransmitDataByteWithACK
+                0x000008b6       0x18 MCAL/COMMUNICATION/I2C/TWI_Program.o
+                0x000008b6                TWI_voidMasterTransmitDataByteWithACK
  .text.TWI_voidMasterReceiveDataByteWithNoACK
-                0x00000b7e       0x1a MCAL/COMMUNICATION/I2C/TWI_Program.o
-                0x00000b7e                TWI_voidMasterReceiveDataByteWithNoACK
+                0x000008ce       0x1a MCAL/COMMUNICATION/I2C/TWI_Program.o
+                0x000008ce                TWI_voidMasterReceiveDataByteWithNoACK
  .text.DIO_SetPinDirection
-                0x00000b98       0xe2 MCAL/DIO/DIO_Program.o
-                0x00000b98                DIO_SetPinDirection
+                0x000008e8       0xe2 MCAL/DIO/DIO_Program.o
+                0x000008e8                DIO_SetPinDirection
  .text.DIO_SetPinValue
-                0x00000c7a       0xe2 MCAL/DIO/DIO_Program.o
-                0x00000c7a                DIO_SetPinValue
+                0x000009ca       0xe2 MCAL/DIO/DIO_Program.o
+                0x000009ca                DIO_SetPinValue
  .text.DIO_TogglePinDirection
-                0x00000d5c       0x68 MCAL/DIO/DIO_Program.o
-                0x00000d5c                DIO_TogglePinDirection
+                0x00000aac       0x68 MCAL/DIO/DIO_Program.o
+                0x00000aac                DIO_TogglePinDirection
  .text.External_Interrupt_Initialization
-                0x00000dc4       0xea MCAL/INTERRUPT/Interrupts_Program.o
-                0x00000dc4                External_Interrupt_Initialization
+                0x00000b14       0xea MCAL/INTERRUPT/Interrupts_Program.o
+                0x00000b14                External_Interrupt_Initialization
  .text.Timer0_OVF_WithInterrupt_Initialize
-                0x00000eae       0x10 MCAL/TIMER/TIMER0/OVF/Timer0_OVF_Program.o
-                0x00000eae                Timer0_OVF_WithInterrupt_Initialize
+                0x00000bfe       0x10 MCAL/TIMER/TIMER0/OVF/Timer0_OVF_Program.o
+                0x00000bfe                Timer0_OVF_WithInterrupt_Initialize
  .text.Timer0_OVF_WithInterrupt_Start
-                0x00000ebe       0x2c MCAL/TIMER/TIMER0/OVF/Timer0_OVF_Program.o
-                0x00000ebe                Timer0_OVF_WithInterrupt_Start
+                0x00000c0e       0x2c MCAL/TIMER/TIMER0/OVF/Timer0_OVF_Program.o
+                0x00000c0e                Timer0_OVF_WithInterrupt_Start
  .text.Timer0_OVF_WithInterrupt_SetDelay
-                0x00000eea       0x54 MCAL/TIMER/TIMER0/OVF/Timer0_OVF_Program.o
-                0x00000eea                Timer0_OVF_WithInterrupt_SetDelay
+                0x00000c3a       0x54 MCAL/TIMER/TIMER0/OVF/Timer0_OVF_Program.o
+                0x00000c3a                Timer0_OVF_WithInterrupt_SetDelay
  .text.libgcc.div
-                0x00000f3e       0x28 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_divmodhi4.o)
-                0x00000f3e                _div
-                0x00000f3e                __divmodhi4
+                0x00000c8e       0x28 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_divmodhi4.o)
+                0x00000c8e                _div
+                0x00000c8e                __divmodhi4
  .text.libgcc.div
-                0x00000f66       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodsi4.o)
-                0x00000f66                __udivmodsi4
- .text.libgcc   0x00000faa        0xc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_tablejump2.o)
-                0x00000faa                __tablejump2__
+                0x00000cb6       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodsi4.o)
+                0x00000cb6                __udivmodsi4
+ .text.libgcc   0x00000cfa        0xc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_tablejump2.o)
+                0x00000cfa                __tablejump2__
  .text.libgcc.mul
-                0x00000fb6       0x1e c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_umulhisi3.o)
-                0x00000fb6                __umulhisi3
+                0x00000d06       0x1e c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_umulhisi3.o)
+                0x00000d06                __umulhisi3
  .text.libgcc.mul
-                0x00000fd4       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_muluhisi3.o)
-                0x00000fd4                __muluhisi3
+                0x00000d24       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_muluhisi3.o)
+                0x00000d24                __muluhisi3
  .text.libgcc.div
-                0x00000fea       0x28 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodhi4.o)
-                0x00000fea                __udivmodhi4
- .text.avr-libc
-                0x00001012       0x1e c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(ltoa_ncheck.o)
-                0x00001012                __ltoa_ncheck
- .text.avr-libc
-                0x00001030       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(ultoa_ncheck.o)
-                0x00001030                __ultoa_ncheck
-                0x00001032                __ultoa_common
- .text.avr-libc
-                0x00001074       0x20 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(strrev.o)
-                0x00001074                strrev
-                0x00001094                . = ALIGN (0x2)
+                0x00000d3a       0x28 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodhi4.o)
+                0x00000d3a                __udivmodhi4
+                0x00000d62                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00001094        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
-                0x00001094                _exit
-                0x00001094                exit
+ .fini9         0x00000d62        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+                0x00000d62                _exit
+                0x00000d62                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -919,11 +919,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00001094        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+ .fini0         0x00000d62        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x00001098                _etext = .
+                0x00000d66                _etext = .
 
-.data           0x00800060        0x2 load address 0x00001098
+.data           0x00800060        0x2 load address 0x00000d66
                 0x00800060                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
@@ -942,7 +942,7 @@ END GROUP
                 0x00800062                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
- .bss.count.2545
+ .bss.count.2531
                 0x00800062        0x1 APP/WaterHeater/WaterHeater_Program.o
  .bss.g_TempIndex
                 0x00800063        0x1 APP/WaterHeater/WaterHeater_Program.o
@@ -976,8 +976,8 @@ END GROUP
                 0x0080007a                _T0_OVF_Count
  *(COMMON)
                 0x0080007e                PROVIDE (__bss_end, .)
-                0x00001098                __data_load_start = LOADADDR (.data)
-                0x0000109a                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00000d66                __data_load_start = LOADADDR (.data)
+                0x00000d68                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x0080007e        0x0
                 [!provide]                PROVIDE (__noinit_start, .)
@@ -1028,7 +1028,6 @@ END GROUP
  .comment       0x00000000       0x30 APP/MAIN/Main.o
                                  0x31 (size before relaxing)
  .comment       0x00000030       0x31 APP/WaterHeater/WaterHeater_Program.o
- .comment       0x00000030       0x31 HAL/DISPLAY/LCD/LCD_Program.o
  .comment       0x00000030       0x31 HAL/DISPLAY/SEVENSEGMENT/SEVSEG_Program.o
  .comment       0x00000030       0x31 HAL/EEPROM_24C16N/EEPROM_24C16N_Program.o
  .comment       0x00000030       0x31 HAL/LED/LED0/ON_LED_Program.o
@@ -1063,171 +1062,162 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000      0x450
+.debug_aranges  0x00000000      0x3d8
  *(.debug_aranges)
  .debug_aranges
                 0x00000000       0x20 APP/MAIN/Main.o
  .debug_aranges
                 0x00000020       0x80 APP/WaterHeater/WaterHeater_Program.o
  .debug_aranges
-                0x000000a0       0x78 HAL/DISPLAY/LCD/LCD_Program.o
+                0x000000a0       0x60 HAL/DISPLAY/SEVENSEGMENT/SEVSEG_Program.o
  .debug_aranges
-                0x00000118       0x60 HAL/DISPLAY/SEVENSEGMENT/SEVSEG_Program.o
+                0x00000100       0x30 HAL/EEPROM_24C16N/EEPROM_24C16N_Program.o
  .debug_aranges
-                0x00000178       0x30 HAL/EEPROM_24C16N/EEPROM_24C16N_Program.o
+                0x00000130       0x38 HAL/LED/LED0/ON_LED_Program.o
  .debug_aranges
-                0x000001a8       0x38 HAL/LED/LED0/ON_LED_Program.o
+                0x00000168       0x38 HAL/LED/LED1/HEATING_LED_Program.o
  .debug_aranges
-                0x000001e0       0x38 HAL/LED/LED1/HEATING_LED_Program.o
+                0x000001a0       0x38 HAL/LED/LED2/COOLING_LED_Program.o
  .debug_aranges
-                0x00000218       0x38 HAL/LED/LED2/COOLING_LED_Program.o
+                0x000001d8       0x30 HAL/RELAYs/COOLER/CoolerRelay_Program.o
  .debug_aranges
-                0x00000250       0x30 HAL/RELAYs/COOLER/CoolerRelay_Program.o
+                0x00000208       0x30 HAL/RELAYs/HEATER/HeaterRelay_Program.o
  .debug_aranges
-                0x00000280       0x30 HAL/RELAYs/HEATER/HeaterRelay_Program.o
+                0x00000238       0x28 HAL/TEMP_SENSOR/LM35/LM35_Program.o
  .debug_aranges
-                0x000002b0       0x28 HAL/TEMP_SENSOR/LM35/LM35_Program.o
+                0x00000260       0x30 MCAL/ADC/ADC_Program.o
  .debug_aranges
-                0x000002d8       0x30 MCAL/ADC/ADC_Program.o
+                0x00000290       0x88 MCAL/COMMUNICATION/I2C/TWI_Program.o
  .debug_aranges
-                0x00000308       0x88 MCAL/COMMUNICATION/I2C/TWI_Program.o
+                0x00000318       0x40 MCAL/DIO/DIO_Program.o
  .debug_aranges
-                0x00000390       0x40 MCAL/DIO/DIO_Program.o
+                0x00000358       0x20 MCAL/INTERRUPT/Interrupts_Program.o
  .debug_aranges
-                0x000003d0       0x20 MCAL/INTERRUPT/Interrupts_Program.o
- .debug_aranges
-                0x000003f0       0x60 MCAL/TIMER/TIMER0/OVF/Timer0_OVF_Program.o
+                0x00000378       0x60 MCAL/TIMER/TIMER0/OVF/Timer0_OVF_Program.o
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x3dac
+.debug_info     0x00000000     0x2f6a
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x4e6 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.1.130/gcc/dev/atmega32/avr5/crtatmega32.o
  .debug_info    0x000004e6       0xb7 APP/MAIN/Main.o
- .debug_info    0x0000059d      0x8ed APP/WaterHeater/WaterHeater_Program.o
- .debug_info    0x00000e8a      0xcbc HAL/DISPLAY/LCD/LCD_Program.o
- .debug_info    0x00001b46      0x559 HAL/DISPLAY/SEVENSEGMENT/SEVSEG_Program.o
- .debug_info    0x0000209f      0x43a HAL/EEPROM_24C16N/EEPROM_24C16N_Program.o
- .debug_info    0x000024d9      0x251 HAL/LED/LED0/ON_LED_Program.o
- .debug_info    0x0000272a      0x251 HAL/LED/LED1/HEATING_LED_Program.o
- .debug_info    0x0000297b      0x251 HAL/LED/LED2/COOLING_LED_Program.o
- .debug_info    0x00002bcc      0x209 HAL/RELAYs/COOLER/CoolerRelay_Program.o
- .debug_info    0x00002dd5      0x209 HAL/RELAYs/HEATER/HeaterRelay_Program.o
- .debug_info    0x00002fde      0x200 HAL/TEMP_SENSOR/LM35/LM35_Program.o
- .debug_info    0x000031de      0x1f4 MCAL/ADC/ADC_Program.o
- .debug_info    0x000033d2      0x3ce MCAL/COMMUNICATION/I2C/TWI_Program.o
- .debug_info    0x000037a0      0x27c MCAL/DIO/DIO_Program.o
- .debug_info    0x00003a1c      0x115 MCAL/INTERRUPT/Interrupts_Program.o
- .debug_info    0x00003b31      0x27b MCAL/TIMER/TIMER0/OVF/Timer0_OVF_Program.o
+ .debug_info    0x0000059d      0x767 APP/WaterHeater/WaterHeater_Program.o
+ .debug_info    0x00000d04      0x559 HAL/DISPLAY/SEVENSEGMENT/SEVSEG_Program.o
+ .debug_info    0x0000125d      0x43a HAL/EEPROM_24C16N/EEPROM_24C16N_Program.o
+ .debug_info    0x00001697      0x251 HAL/LED/LED0/ON_LED_Program.o
+ .debug_info    0x000018e8      0x251 HAL/LED/LED1/HEATING_LED_Program.o
+ .debug_info    0x00001b39      0x251 HAL/LED/LED2/COOLING_LED_Program.o
+ .debug_info    0x00001d8a      0x209 HAL/RELAYs/COOLER/CoolerRelay_Program.o
+ .debug_info    0x00001f93      0x209 HAL/RELAYs/HEATER/HeaterRelay_Program.o
+ .debug_info    0x0000219c      0x200 HAL/TEMP_SENSOR/LM35/LM35_Program.o
+ .debug_info    0x0000239c      0x1f4 MCAL/ADC/ADC_Program.o
+ .debug_info    0x00002590      0x3ce MCAL/COMMUNICATION/I2C/TWI_Program.o
+ .debug_info    0x0000295e      0x27c MCAL/DIO/DIO_Program.o
+ .debug_info    0x00002bda      0x115 MCAL/INTERRUPT/Interrupts_Program.o
+ .debug_info    0x00002cef      0x27b MCAL/TIMER/TIMER0/OVF/Timer0_OVF_Program.o
 
-.debug_abbrev   0x00000000     0x14c7
+.debug_abbrev   0x00000000     0x1202
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0x4a3 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.1.130/gcc/dev/atmega32/avr5/crtatmega32.o
  .debug_abbrev  0x000004a3       0x64 APP/MAIN/Main.o
- .debug_abbrev  0x00000507      0x1b7 APP/WaterHeater/WaterHeater_Program.o
- .debug_abbrev  0x000006be      0x29e HAL/DISPLAY/LCD/LCD_Program.o
- .debug_abbrev  0x0000095c      0x16c HAL/DISPLAY/SEVENSEGMENT/SEVSEG_Program.o
- .debug_abbrev  0x00000ac8      0x1a0 HAL/EEPROM_24C16N/EEPROM_24C16N_Program.o
- .debug_abbrev  0x00000c68       0xab HAL/LED/LED0/ON_LED_Program.o
- .debug_abbrev  0x00000d13       0xab HAL/LED/LED1/HEATING_LED_Program.o
- .debug_abbrev  0x00000dbe       0xab HAL/LED/LED2/COOLING_LED_Program.o
- .debug_abbrev  0x00000e69       0xab HAL/RELAYs/COOLER/CoolerRelay_Program.o
- .debug_abbrev  0x00000f14       0xab HAL/RELAYs/HEATER/HeaterRelay_Program.o
- .debug_abbrev  0x00000fbf       0xd8 HAL/TEMP_SENSOR/LM35/LM35_Program.o
- .debug_abbrev  0x00001097       0xa1 MCAL/ADC/ADC_Program.o
- .debug_abbrev  0x00001138      0x120 MCAL/COMMUNICATION/I2C/TWI_Program.o
- .debug_abbrev  0x00001258       0xd9 MCAL/DIO/DIO_Program.o
- .debug_abbrev  0x00001331       0x85 MCAL/INTERRUPT/Interrupts_Program.o
- .debug_abbrev  0x000013b6      0x111 MCAL/TIMER/TIMER0/OVF/Timer0_OVF_Program.o
+ .debug_abbrev  0x00000507      0x190 APP/WaterHeater/WaterHeater_Program.o
+ .debug_abbrev  0x00000697      0x16c HAL/DISPLAY/SEVENSEGMENT/SEVSEG_Program.o
+ .debug_abbrev  0x00000803      0x1a0 HAL/EEPROM_24C16N/EEPROM_24C16N_Program.o
+ .debug_abbrev  0x000009a3       0xab HAL/LED/LED0/ON_LED_Program.o
+ .debug_abbrev  0x00000a4e       0xab HAL/LED/LED1/HEATING_LED_Program.o
+ .debug_abbrev  0x00000af9       0xab HAL/LED/LED2/COOLING_LED_Program.o
+ .debug_abbrev  0x00000ba4       0xab HAL/RELAYs/COOLER/CoolerRelay_Program.o
+ .debug_abbrev  0x00000c4f       0xab HAL/RELAYs/HEATER/HeaterRelay_Program.o
+ .debug_abbrev  0x00000cfa       0xd8 HAL/TEMP_SENSOR/LM35/LM35_Program.o
+ .debug_abbrev  0x00000dd2       0xa1 MCAL/ADC/ADC_Program.o
+ .debug_abbrev  0x00000e73      0x120 MCAL/COMMUNICATION/I2C/TWI_Program.o
+ .debug_abbrev  0x00000f93       0xd9 MCAL/DIO/DIO_Program.o
+ .debug_abbrev  0x0000106c       0x85 MCAL/INTERRUPT/Interrupts_Program.o
+ .debug_abbrev  0x000010f1      0x111 MCAL/TIMER/TIMER0/OVF/Timer0_OVF_Program.o
 
-.debug_line     0x00000000     0x21d9
+.debug_line     0x00000000     0x1c76
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000      0x115 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.1.130/gcc/dev/atmega32/avr5/crtatmega32.o
  .debug_line    0x00000115       0x7a APP/MAIN/Main.o
- .debug_line    0x0000018f      0x68c APP/WaterHeater/WaterHeater_Program.o
- .debug_line    0x0000081b      0x4e4 HAL/DISPLAY/LCD/LCD_Program.o
- .debug_line    0x00000cff      0x299 HAL/DISPLAY/SEVENSEGMENT/SEVSEG_Program.o
- .debug_line    0x00000f98      0x210 HAL/EEPROM_24C16N/EEPROM_24C16N_Program.o
- .debug_line    0x000011a8       0xcc HAL/LED/LED0/ON_LED_Program.o
- .debug_line    0x00001274       0xd1 HAL/LED/LED1/HEATING_LED_Program.o
- .debug_line    0x00001345       0xd1 HAL/LED/LED2/COOLING_LED_Program.o
- .debug_line    0x00001416       0xc0 HAL/RELAYs/COOLER/CoolerRelay_Program.o
- .debug_line    0x000014d6       0xc0 HAL/RELAYs/HEATER/HeaterRelay_Program.o
- .debug_line    0x00001596      0x118 HAL/TEMP_SENSOR/LM35/LM35_Program.o
- .debug_line    0x000016ae      0x180 MCAL/ADC/ADC_Program.o
- .debug_line    0x0000182e      0x3e9 MCAL/COMMUNICATION/I2C/TWI_Program.o
- .debug_line    0x00001c17      0x1ec MCAL/DIO/DIO_Program.o
- .debug_line    0x00001e03      0x1a6 MCAL/INTERRUPT/Interrupts_Program.o
- .debug_line    0x00001fa9      0x230 MCAL/TIMER/TIMER0/OVF/Timer0_OVF_Program.o
+ .debug_line    0x0000018f      0x60d APP/WaterHeater/WaterHeater_Program.o
+ .debug_line    0x0000079c      0x299 HAL/DISPLAY/SEVENSEGMENT/SEVSEG_Program.o
+ .debug_line    0x00000a35      0x210 HAL/EEPROM_24C16N/EEPROM_24C16N_Program.o
+ .debug_line    0x00000c45       0xcc HAL/LED/LED0/ON_LED_Program.o
+ .debug_line    0x00000d11       0xd1 HAL/LED/LED1/HEATING_LED_Program.o
+ .debug_line    0x00000de2       0xd1 HAL/LED/LED2/COOLING_LED_Program.o
+ .debug_line    0x00000eb3       0xc0 HAL/RELAYs/COOLER/CoolerRelay_Program.o
+ .debug_line    0x00000f73       0xc0 HAL/RELAYs/HEATER/HeaterRelay_Program.o
+ .debug_line    0x00001033      0x118 HAL/TEMP_SENSOR/LM35/LM35_Program.o
+ .debug_line    0x0000114b      0x180 MCAL/ADC/ADC_Program.o
+ .debug_line    0x000012cb      0x3e9 MCAL/COMMUNICATION/I2C/TWI_Program.o
+ .debug_line    0x000016b4      0x1ec MCAL/DIO/DIO_Program.o
+ .debug_line    0x000018a0      0x1a6 MCAL/INTERRUPT/Interrupts_Program.o
+ .debug_line    0x00001a46      0x230 MCAL/TIMER/TIMER0/OVF/Timer0_OVF_Program.o
 
-.debug_frame    0x00000000      0x908
+.debug_frame    0x00000000      0x77c
  *(.debug_frame)
  .debug_frame   0x00000000       0x24 APP/MAIN/Main.o
  .debug_frame   0x00000024      0x204 APP/WaterHeater/WaterHeater_Program.o
- .debug_frame   0x00000228      0x18c HAL/DISPLAY/LCD/LCD_Program.o
- .debug_frame   0x000003b4       0xb0 HAL/DISPLAY/SEVENSEGMENT/SEVSEG_Program.o
- .debug_frame   0x00000464       0x70 HAL/EEPROM_24C16N/EEPROM_24C16N_Program.o
- .debug_frame   0x000004d4       0x54 HAL/LED/LED0/ON_LED_Program.o
- .debug_frame   0x00000528       0x54 HAL/LED/LED1/HEATING_LED_Program.o
- .debug_frame   0x0000057c       0x54 HAL/LED/LED2/COOLING_LED_Program.o
- .debug_frame   0x000005d0       0x44 HAL/RELAYs/COOLER/CoolerRelay_Program.o
- .debug_frame   0x00000614       0x44 HAL/RELAYs/HEATER/HeaterRelay_Program.o
- .debug_frame   0x00000658       0x34 HAL/TEMP_SENSOR/LM35/LM35_Program.o
- .debug_frame   0x0000068c       0x44 MCAL/ADC/ADC_Program.o
- .debug_frame   0x000006d0       0xf4 MCAL/COMMUNICATION/I2C/TWI_Program.o
- .debug_frame   0x000007c4       0x64 MCAL/DIO/DIO_Program.o
- .debug_frame   0x00000828       0x24 MCAL/INTERRUPT/Interrupts_Program.o
- .debug_frame   0x0000084c       0xbc MCAL/TIMER/TIMER0/OVF/Timer0_OVF_Program.o
+ .debug_frame   0x00000228       0xb0 HAL/DISPLAY/SEVENSEGMENT/SEVSEG_Program.o
+ .debug_frame   0x000002d8       0x70 HAL/EEPROM_24C16N/EEPROM_24C16N_Program.o
+ .debug_frame   0x00000348       0x54 HAL/LED/LED0/ON_LED_Program.o
+ .debug_frame   0x0000039c       0x54 HAL/LED/LED1/HEATING_LED_Program.o
+ .debug_frame   0x000003f0       0x54 HAL/LED/LED2/COOLING_LED_Program.o
+ .debug_frame   0x00000444       0x44 HAL/RELAYs/COOLER/CoolerRelay_Program.o
+ .debug_frame   0x00000488       0x44 HAL/RELAYs/HEATER/HeaterRelay_Program.o
+ .debug_frame   0x000004cc       0x34 HAL/TEMP_SENSOR/LM35/LM35_Program.o
+ .debug_frame   0x00000500       0x44 MCAL/ADC/ADC_Program.o
+ .debug_frame   0x00000544       0xf4 MCAL/COMMUNICATION/I2C/TWI_Program.o
+ .debug_frame   0x00000638       0x64 MCAL/DIO/DIO_Program.o
+ .debug_frame   0x0000069c       0x24 MCAL/INTERRUPT/Interrupts_Program.o
+ .debug_frame   0x000006c0       0xbc MCAL/TIMER/TIMER0/OVF/Timer0_OVF_Program.o
 
-.debug_str      0x00000000     0x1547
+.debug_str      0x00000000     0x1350
  *(.debug_str)
  .debug_str     0x00000000      0x196 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.1.130/gcc/dev/atmega32/avr5/crtatmega32.o
- .debug_str     0x00000196      0x16d APP/MAIN/Main.o
-                                0x1a6 (size before relaxing)
- .debug_str     0x00000303      0x5c8 APP/WaterHeater/WaterHeater_Program.o
-                                0x75e (size before relaxing)
- .debug_str     0x000008cb      0x26c HAL/DISPLAY/LCD/LCD_Program.o
-                                0x4b8 (size before relaxing)
- .debug_str     0x00000b37       0xf8 HAL/DISPLAY/SEVENSEGMENT/SEVSEG_Program.o
-                                0x3e9 (size before relaxing)
- .debug_str     0x00000c2f      0x39c HAL/EEPROM_24C16N/EEPROM_24C16N_Program.o
-                                0x5b0 (size before relaxing)
- .debug_str     0x00000fcb       0x43 HAL/LED/LED0/ON_LED_Program.o
+ .debug_str     0x00000196      0x176 APP/MAIN/Main.o
+                                0x1af (size before relaxing)
+ .debug_str     0x0000030c      0x51d APP/WaterHeater/WaterHeater_Program.o
+                                0x6bc (size before relaxing)
+ .debug_str     0x00000829      0x20f HAL/DISPLAY/SEVENSEGMENT/SEVSEG_Program.o
+                                0x3f2 (size before relaxing)
+ .debug_str     0x00000a38      0x39c HAL/EEPROM_24C16N/EEPROM_24C16N_Program.o
+                                0x5b9 (size before relaxing)
+ .debug_str     0x00000dd4       0x43 HAL/LED/LED0/ON_LED_Program.o
+                                0x2d1 (size before relaxing)
+ .debug_str     0x00000e17       0x35 HAL/LED/LED1/HEATING_LED_Program.o
+                                0x2ea (size before relaxing)
+ .debug_str     0x00000e4c       0x36 HAL/LED/LED2/COOLING_LED_Program.o
+                                0x2ea (size before relaxing)
+ .debug_str     0x00000e82       0x2b HAL/RELAYs/COOLER/CoolerRelay_Program.o
                                 0x2c8 (size before relaxing)
- .debug_str     0x0000100e       0x35 HAL/LED/LED1/HEATING_LED_Program.o
-                                0x2e1 (size before relaxing)
- .debug_str     0x00001043       0x36 HAL/LED/LED2/COOLING_LED_Program.o
-                                0x2e1 (size before relaxing)
- .debug_str     0x00001079       0x2b HAL/RELAYs/COOLER/CoolerRelay_Program.o
-                                0x2bf (size before relaxing)
- .debug_str     0x000010a4       0x2b HAL/RELAYs/HEATER/HeaterRelay_Program.o
-                                0x2bf (size before relaxing)
- .debug_str     0x000010cf      0x16f HAL/TEMP_SENSOR/LM35/LM35_Program.o
-                                0x328 (size before relaxing)
- .debug_str     0x0000123e       0x40 MCAL/ADC/ADC_Program.o
-                                0x312 (size before relaxing)
- .debug_str     0x0000127e      0x128 MCAL/COMMUNICATION/I2C/TWI_Program.o
-                                0x632 (size before relaxing)
- .debug_str     0x000013a6       0x57 MCAL/DIO/DIO_Program.o
-                                0x2d4 (size before relaxing)
- .debug_str     0x000013fd       0x36 MCAL/INTERRUPT/Interrupts_Program.o
-                                0x281 (size before relaxing)
- .debug_str     0x00001433      0x114 MCAL/TIMER/TIMER0/OVF/Timer0_OVF_Program.o
-                                0x3a1 (size before relaxing)
+ .debug_str     0x00000ead       0x2b HAL/RELAYs/HEATER/HeaterRelay_Program.o
+                                0x2c8 (size before relaxing)
+ .debug_str     0x00000ed8      0x16f HAL/TEMP_SENSOR/LM35/LM35_Program.o
+                                0x331 (size before relaxing)
+ .debug_str     0x00001047       0x40 MCAL/ADC/ADC_Program.o
+                                0x31b (size before relaxing)
+ .debug_str     0x00001087      0x128 MCAL/COMMUNICATION/I2C/TWI_Program.o
+                                0x63b (size before relaxing)
+ .debug_str     0x000011af       0x57 MCAL/DIO/DIO_Program.o
+                                0x2dd (size before relaxing)
+ .debug_str     0x00001206       0x36 MCAL/INTERRUPT/Interrupts_Program.o
+                                0x28a (size before relaxing)
+ .debug_str     0x0000123c      0x114 MCAL/TIMER/TIMER0/OVF/Timer0_OVF_Program.o
+                                0x3aa (size before relaxing)
 
-.debug_loc      0x00000000     0x1771
+.debug_loc      0x00000000      0xf9a
  *(.debug_loc)
  .debug_loc     0x00000000      0x3f4 APP/WaterHeater/WaterHeater_Program.o
- .debug_loc     0x000003f4      0x7d7 HAL/DISPLAY/LCD/LCD_Program.o
- .debug_loc     0x00000bcb       0xd9 HAL/DISPLAY/SEVENSEGMENT/SEVSEG_Program.o
- .debug_loc     0x00000ca4      0x198 HAL/EEPROM_24C16N/EEPROM_24C16N_Program.o
- .debug_loc     0x00000e3c       0x5e HAL/TEMP_SENSOR/LM35/LM35_Program.o
- .debug_loc     0x00000e9a      0x191 MCAL/ADC/ADC_Program.o
- .debug_loc     0x0000102b      0x1b7 MCAL/COMMUNICATION/I2C/TWI_Program.o
- .debug_loc     0x000011e2      0x378 MCAL/DIO/DIO_Program.o
- .debug_loc     0x0000155a       0x53 MCAL/INTERRUPT/Interrupts_Program.o
- .debug_loc     0x000015ad      0x1c4 MCAL/TIMER/TIMER0/OVF/Timer0_OVF_Program.o
+ .debug_loc     0x000003f4       0xd9 HAL/DISPLAY/SEVENSEGMENT/SEVSEG_Program.o
+ .debug_loc     0x000004cd      0x198 HAL/EEPROM_24C16N/EEPROM_24C16N_Program.o
+ .debug_loc     0x00000665       0x5e HAL/TEMP_SENSOR/LM35/LM35_Program.o
+ .debug_loc     0x000006c3      0x191 MCAL/ADC/ADC_Program.o
+ .debug_loc     0x00000854      0x1b7 MCAL/COMMUNICATION/I2C/TWI_Program.o
+ .debug_loc     0x00000a0b      0x378 MCAL/DIO/DIO_Program.o
+ .debug_loc     0x00000d83       0x53 MCAL/INTERRUPT/Interrupts_Program.o
+ .debug_loc     0x00000dd6      0x1c4 MCAL/TIMER/TIMER0/OVF/Timer0_OVF_Program.o
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -1247,24 +1237,23 @@ END GROUP
 .debug_pubtypes
  *(.debug_pubtypes)
 
-.debug_ranges   0x00000000      0x350
+.debug_ranges   0x00000000      0x2e8
  *(.debug_ranges)
  .debug_ranges  0x00000000       0x10 APP/MAIN/Main.o
  .debug_ranges  0x00000010       0x70 APP/WaterHeater/WaterHeater_Program.o
- .debug_ranges  0x00000080       0x68 HAL/DISPLAY/LCD/LCD_Program.o
- .debug_ranges  0x000000e8       0x50 HAL/DISPLAY/SEVENSEGMENT/SEVSEG_Program.o
- .debug_ranges  0x00000138       0x20 HAL/EEPROM_24C16N/EEPROM_24C16N_Program.o
- .debug_ranges  0x00000158       0x28 HAL/LED/LED0/ON_LED_Program.o
- .debug_ranges  0x00000180       0x28 HAL/LED/LED1/HEATING_LED_Program.o
- .debug_ranges  0x000001a8       0x28 HAL/LED/LED2/COOLING_LED_Program.o
- .debug_ranges  0x000001d0       0x20 HAL/RELAYs/COOLER/CoolerRelay_Program.o
- .debug_ranges  0x000001f0       0x20 HAL/RELAYs/HEATER/HeaterRelay_Program.o
- .debug_ranges  0x00000210       0x18 HAL/TEMP_SENSOR/LM35/LM35_Program.o
- .debug_ranges  0x00000228       0x20 MCAL/ADC/ADC_Program.o
- .debug_ranges  0x00000248       0x78 MCAL/COMMUNICATION/I2C/TWI_Program.o
- .debug_ranges  0x000002c0       0x30 MCAL/DIO/DIO_Program.o
- .debug_ranges  0x000002f0       0x10 MCAL/INTERRUPT/Interrupts_Program.o
- .debug_ranges  0x00000300       0x50 MCAL/TIMER/TIMER0/OVF/Timer0_OVF_Program.o
+ .debug_ranges  0x00000080       0x50 HAL/DISPLAY/SEVENSEGMENT/SEVSEG_Program.o
+ .debug_ranges  0x000000d0       0x20 HAL/EEPROM_24C16N/EEPROM_24C16N_Program.o
+ .debug_ranges  0x000000f0       0x28 HAL/LED/LED0/ON_LED_Program.o
+ .debug_ranges  0x00000118       0x28 HAL/LED/LED1/HEATING_LED_Program.o
+ .debug_ranges  0x00000140       0x28 HAL/LED/LED2/COOLING_LED_Program.o
+ .debug_ranges  0x00000168       0x20 HAL/RELAYs/COOLER/CoolerRelay_Program.o
+ .debug_ranges  0x00000188       0x20 HAL/RELAYs/HEATER/HeaterRelay_Program.o
+ .debug_ranges  0x000001a8       0x18 HAL/TEMP_SENSOR/LM35/LM35_Program.o
+ .debug_ranges  0x000001c0       0x20 MCAL/ADC/ADC_Program.o
+ .debug_ranges  0x000001e0       0x78 MCAL/COMMUNICATION/I2C/TWI_Program.o
+ .debug_ranges  0x00000258       0x30 MCAL/DIO/DIO_Program.o
+ .debug_ranges  0x00000288       0x10 MCAL/INTERRUPT/Interrupts_Program.o
+ .debug_ranges  0x00000298       0x50 MCAL/TIMER/TIMER0/OVF/Timer0_OVF_Program.o
 
 .debug_macro
  *(.debug_macro)

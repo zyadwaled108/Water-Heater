@@ -11,7 +11,7 @@
 
 #include "CPU_Configuration.h"
 
-#define COOLING_LED        DIO_PIN6
+#define COOLING_LED        DIO_PIN1
 
 #define COOLING_LED_PORT   DIO_PORTD
 

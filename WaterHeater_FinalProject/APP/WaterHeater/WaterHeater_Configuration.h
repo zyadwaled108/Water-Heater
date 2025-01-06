@@ -12,12 +12,13 @@
 #include "Main.h"
 
 // Definitions
-#define MIN_TEMPERATURE 35
-#define MAX_TEMPERATURE 75
-#define INITIAL_TEMPERATURE 60
-#define DISPLAY_BLINK_INTERVAL 1000
-#define INACTIVITY_TIMEOUT 5000
-#define TEMP_HISTORY_SIZE 10
+#define MIN_TEMPERATURE 35                //35C
+#define MAX_TEMPERATURE 75                //75C
+#define INITIAL_TEMPERATURE 60            //60C
+#define DISPLAY_BLINK_INTERVAL 1000       //1S
+#define LED_BLINK_INTERVAL 500           //0.5S
+#define INACTIVITY_TIMEOUT 5000           //5S
+#define TEMP_HISTORY_SIZE 10              // 10 reads
 
 
 
